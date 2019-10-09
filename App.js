@@ -63,6 +63,8 @@ class HomeScreen extends React.Component {
 	componentDidMount() {
 		const { navigation } = this.props;
 		const myNavigationParam = navigation.getParam('username', 'error');
+
+		// WHY DOES THIS GIVE 'error'?
 		console.log(myNavigationParam);
 	}
 
